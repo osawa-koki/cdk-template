@@ -1,12 +1,12 @@
-// import * as cdk from 'aws-cdk-lib';
-// import { Template } from 'aws-cdk-lib/assertions';
+import * as cdk from 'aws-cdk-lib';
+import { Template } from 'aws-cdk-lib/assertions';
 
-// import * as Infra from '../lib/index';
+import * as IndexStack from '../lib/index';
 
 test('Hoge Created', () => {
-//   const app = new cdk.App();
-//     // WHEN
-//   const stack = new Infra.InfraStack(app, 'MyTestStack');
-//     // THEN
-//   const template = Template.fromStack(stack);
+  const app = new cdk.App();
+  const stack = new IndexStack.IndexStack(app, 'MyTestStack');
+  const template = Template.fromStack(stack);
+
+  template.toJSON();
 });
