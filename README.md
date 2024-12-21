@@ -22,9 +22,8 @@ GitHub Actionsでデプロイするためには、以下のシークレットを
 
 | シークレット名 | 説明 |
 | --- | --- |
-| AWS_ACCESS_KEY_ID | AWSのアクセスキーID |
-| AWS_SECRET_ACCESS_KEY | AWSのシークレットアクセスキー |
-| AWS_REGION | AWSのリージョン |
+| AWS_ROLE_ARN | IAMロールARN |
+| AWS_REGION | AWSリージョン |
 | DOTENV | `.env`ファイルの内容 |
 
 タグをプッシュすると、GitHub Actionsがデプロイを行います。  
