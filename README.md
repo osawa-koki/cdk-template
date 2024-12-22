@@ -22,7 +22,7 @@ GitHub Actionsでデプロイするためには、以下のシークレットを
 
 | シークレット名 | 説明 |
 | --- | --- |
-| AWS_ROLE_ARN | IAMロールARN |
+| AWS_ROLE_ARN | IAMロールARN (Ref: https://github.com/osawa-koki/oidc-integration-github-aws) |
 | AWS_REGION | AWSリージョン |
 | DOTENV | `.env`ファイルの内容 |
 
