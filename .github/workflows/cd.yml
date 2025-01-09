@@ -35,7 +35,7 @@ jobs:
         run: echo '${{ secrets.DOTENV }}' > ./.env
       - name: Install dependencies
         if: steps.node_modules_cache_id.outputs.cache-hit != 'true'
-        run: yarn install --frozen-lockfile --non-interactive
+        run: npm install --omit=dev
       - name: Install CDK
         run: npm install --global aws-cdk
       - name: Bootstrap
